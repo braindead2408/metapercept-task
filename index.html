@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Title </title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link="stylesheet" href="./styles.css">
+
+</head>
+<style>
+    body{
+        padding-top: 50px;
+
+    }
+    .navbar{
+        background-color: aliceblue;
+    }
+    .btn-custom{
+        margin-right: 10px;
+
+    }
+    
+</style>
+<body>
+<nav  class="navbar navbar-expand-lg navbar-light fixed-top">
+<a class="navbar-brand" href="#">Title</a>
+<button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar-nav" aria-expanded="false" aria-level="toggle-navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse-navbar-collapse" id="navbar-Nav">
+<ul class ="navbar-nav ml-auto">
+    <li class="nav-item-active">
+        <a class="nav-link" href="#home" >Home</a>
+    </li>
+
+
+    <li class="nav-item">
+        <a class="nav-link" href="#about" >About</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#blog" >Blog</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#contact" >Contact</a>
+    </li>
+    
+</ul>
+<button class="btn btn-primary btn-custom">Button</button>
+</div>
+</nav>
+</body>
+
+<div id="list-cc" class="container">
+    <h2>Classes</h2>
+    <div class="list-cc" id="cc-container"></div>
+</div>
+<script>
+    document.addEventListener('DOMContenLoaded',function(){
+        const cccontainer=document.getElementById("cc-container");
+
+        fetch('D:\Metapercept\class.json')
+        .then(response => response.json())
+        .then(cc => {
+            cc.foreach(course => {
+                const cccard= `
+                <div class="course-card">
+                    <img src=cc.ImageUrl"`
+            })
+        }
+        }
+    })
+</script>
+
+</header>
+</html>
